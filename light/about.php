@@ -38,7 +38,7 @@ include("includes/header.php");
                 <div class="col-md-6">
                 	<div class="margin-20"></div>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/rEk0AdJx9gw"></iframe>
+                        <img src="assets/images/about/steak.png"></img>
                     </div>
                 </div>
             </div><!-- .row -->
@@ -76,7 +76,6 @@ include("includes/header.php");
         </div><!-- .site-info -->
     </footer>
     
-    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 	<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/owl-carousel2/owl.carousel.min.js"></script>
