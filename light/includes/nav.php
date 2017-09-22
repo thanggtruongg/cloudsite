@@ -28,3 +28,4 @@
                 </div><!-- .container -->
             </div><!-- #main-navigation-inner -->
         </div>
+	</header>

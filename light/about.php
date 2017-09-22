@@ -5,25 +5,12 @@ include("includes/header.php");
 
 <body>
 	
-    
-    <div id="screen-cover"></div>
-    
-    <header class="page-header">
-        <div class="page-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 text-right">
-                        Welcome Guest, <a href="#" class="text-uppercase">Sign in</a> | <a href="#" class="text-uppercase">Create new account</a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- .page-top -->
 <?php 
 	include("includes/nav.php");
 ?>
 
     <div class="page-title-img">
-        <img class="img-full" alt="page title img" src="assets/images/about/old.jpg">
+        <img class="img-full" alt="page title img" src="assets/images/about/old.png">
     </div>
     
     <section>
@@ -68,7 +55,7 @@ include("includes/header.php");
         	<div class="container">
             	<div class="row">
                 	<div class="col-xs-8">
-                    	2015 All rights reserved. By IgnitionThemes Made with love.
+                    	
                     </div>
                 </div>
             </div><!-- .container -->

@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6 text-right">
-                        Welcome Guest, <a href="#" class="text-uppercase">Sign in</a> | <a href="#" class="text-uppercase">Create new account</a>
+                        Welcome Guest, <a href="../login.php" class="text-uppercase">Sign in</a> | <a href="#" class="text-uppercase">Create new account</a>
                     </div>
                 </div>
             </div>
