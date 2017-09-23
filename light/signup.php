@@ -1,4 +1,34 @@
 <?php
+	session_start();
+	
+	$db = mysqli_connect('localhost', 'root', '', 'cloud');
+	
+	if (isset($_POST['submit']))
+	{
+		$email =$_POST['email'];
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		$password2 = $_POST['password2'];
+		
+		if($password == $password2)
+		{
+			$password = md5($password);
+			$sql =("INSERT INTO users(email, username, password) VALUES('$email', '$username', '$password')");
+			mysqli_query($db, $sql);
+			$_SESSION['message'] = "you are now logged in";
+			$_SESSION['username'] = $username;
+			header("location: index.php");
+			
+		}
+		else
+		{
+			$_SESSION['message'] = "passwords do not match";
+		}
+	}
+	
+?>
+	
+<?php
 	$page_title="signup"; 
 	include("includes/header.php");
 ?>
@@ -16,10 +46,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>Sign up</h2>
-                    <form action = 'profile.php' method = 'GET' >
-						Email:	<input type = 'text' size='90' name =  'search' >
-						Name:	<input type = 'text' size='90' name =  'search' >
-						Password:<input type = 'password' size='90' name =  'search' >
+                    <form method="post" action="signup.php" >
+						Email:	<input type = 'text' size='90' name =  'email' >
+						Name:	<input type = 'text' size='90' name =  'username' >
+						Password:<input type = 'password' size='90' name =  'password' >
+						Confirm password:<input type = 'password' size='90' name =  'password2' >
 						<input type = 'submit' name = 'submit' value = 'Sign Up' >
 				
 					</form>
