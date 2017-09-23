@@ -6,17 +6,22 @@
 	include 'includes/nav.php';
 ?>
 <div class="page-title-img">
-        <img class="img-full" alt="page title img" src="assets/images/about/old.png">
+        <img class="img-full">
     </div>
     
     <section>
         <div class="container">
-            <h1 class="bottom-line">About us</h1>
-            <p class="text-center"><em>When gliding by the Bashee isles we emerged at last upon the great South Sea.</em></p>
+            <h1 class="bottom-line">Login</h1>
+            <p class="text-center"><em>Login to receive coupons and explore more foods near you</em></p>
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Our History</h2>
-                    <p>It may be that the primal source of all those pictorial delusions will be found among the oldest Hindoo, Egyptian, and Grecian sculptures. For ever since those inventive but unscrupulous times when on the marble panellings of temples, the pedestals of statues, and on shields, medallions, cups, and coins, the dolphin was drawn in scales of chain-armor like Saladin's, and a helmeted head like St. George's; ever since then has something of the same sort of license prevailed, not only in most popular pictures of the whale, but in many scientific presentations of him.</p>
+                    <h2>Login</h2>
+                    <form action = 'profile.php' method = 'GET' >
+						Email:	<input type = 'text' size='90' name =  'search' >
+						Password:<input type = 'text' size='90' name =  'search' >
+						<input type = 'submit' name = 'submit' value = 'Sign in' >
+				
+					</form>
                 </div>
                 <div class="col-md-6">
                 	<div class="margin-20"></div>
@@ -25,3 +30,10 @@
                     </div>
                 </div>
             </div>
+<?php
+	include("includes/footer.php");
+?>
+			
+<?php
+	include("includes/endpage.php");
+?>
