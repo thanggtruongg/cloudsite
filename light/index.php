@@ -1,13 +1,8 @@
 <?php
-$page_title="Home"; 
-include("includes/header.php");
-?>
-
-<?php
+	$page_title="Home"; 
+	include("includes/header.php");
 	include 'includes/nav.php';
 ?>
-
-
 
 	<div class="whatamidoing">
 	<body class="body">
@@ -17,7 +12,7 @@ include("includes/header.php");
 			
 			<h1> Enter Your Choice </h1>
 			<div class="notfound">
-			<form action = 'search.php' method = 'GET' >
+			<form action = 'result.php' method = 'GET' >
 			<input type = 'text' size='90' name =  'search' >
 			<input type = 'submit' name = 'submit' value = 'Search Up Restaurant' >
 			
